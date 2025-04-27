@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+  }
+
+  body {
+    @apply bg-black text-gray-100;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+
+  p {
+    @apply text-lg md:text-xl;
+  }
+
+  .text-sm {
+    @apply text-base;
+  }
+
+  .text-xs {
+    @apply text-sm;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-8 text-white;
+  }
+
+  .section-subtitle {
+    @apply text-2xl md:text-3xl text-gray-400 mb-4;
+  }
+
+  .card {
+    @apply p-6 rounded-xl shadow-lg;
+  }
+
+  .card:hover .text-dark-200 {
+    @apply text-white transition-colors duration-200;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 text-lg;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700 cursor-pointer;
+  }
+
+  .btn-outline {
+    @apply border border-primary-500 text-primary-400 hover:bg-primary-500/10 cursor-pointer;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 bg-gray-800/50 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 text-lg;
+  }
+
+  .textarea {
+    @apply w-full px-4 py-3 bg-gray-800/50 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 min-h-[120px] resize-y text-lg;
+  }
+
+  /* Skills tags */
+  .skill-tag {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/30 text-gray-200 border border-gray-700/30 transition-all duration-300 text-lg;
+  }
+
+  .skill-tag:hover {
+    @apply bg-gray-800/50 border-gray-600/50 text-primary-400 scale-105 shadow-lg shadow-primary-500/10;
+  }
+
+  .skill-tag svg {
+    @apply w-6 h-6 text-gray-400 transition-all duration-300;
+  }
+
+  .skill-tag:hover svg {
+    @apply text-primary-400 scale-110 rotate-6;
+  }
+
+  .skill-tag span {
+    @apply transition-all duration-300;
+  }
+
+  .skill-tag:hover span {
+    @apply translate-x-1 text-primary-400;
+  }
+}
+
+/* Custom text styles */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600;
+}
+
+/* Improved text contrast */
+.text-dark-200 {
+  @apply text-gray-200 text-lg;
+}
+
+.text-dark-300 {
+  @apply text-gray-300 text-lg;
+}
+
+.text-dark-400 {
+  @apply text-gray-400 text-lg;
+} 
