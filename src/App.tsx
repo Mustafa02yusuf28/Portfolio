@@ -546,7 +546,7 @@ const App = () => {
                     </p>
                     <div className="mt-4">
                       <a 
-                        href="https://github.com/Mustafa02yusuf28/IPO-PREDICTOR"
+                        href="https://github.com/Mustafa02yusuf28/ipo-Listing-predictor"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-outline inline-flex items-center space-x-2 w-full justify-center relative z-20"
@@ -688,7 +688,7 @@ const App = () => {
                       >
                         <SiGithub className="h-5 w-5" />
                         <span>GitHub Profile</span>
-                      </a>
+o                       </a>
                     </div>
                     <p className="text-dark-300">
                       Feel free to reach out through email or Telegram. I'll get back to you as soon as possible.
