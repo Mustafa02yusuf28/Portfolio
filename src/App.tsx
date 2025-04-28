@@ -191,6 +191,12 @@ const App = () => {
     init();
   }, []);
 
+  // Add this new function
+  const handleResumeClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.open('/resume/document.pdf', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-black">
       <Particles
@@ -564,6 +570,34 @@ const App = () => {
           </div>
         </section>
 
+        <section id="resume" className="py-16 px-4 sm:px-6 lg:px-8 backdrop-blur-sm">
+          <div className="max-w-7xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="section-title">Resume</h2>
+              <div className="flex justify-center">
+                <motion.a
+                  href="#"
+                  onClick={handleResumeClick}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary inline-flex items-center space-x-2"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <span>View My Resume</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </motion.a>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         <section id="leetcode" ref={leetcodeRef} className="py-16 px-4 sm:px-6 lg:px-8 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -688,7 +722,7 @@ const App = () => {
                       >
                         <SiGithub className="h-5 w-5" />
                         <span>GitHub Profile</span>
-o                       </a>
+                      </a>
                     </div>
                     <p className="text-dark-300">
                       Feel free to reach out through email or Telegram. I'll get back to you as soon as possible.
