@@ -565,6 +565,48 @@ const App = () => {
                     </div>
                   </div>
                 </motion.div>
+
+                <motion.div 
+                  className="card bg-dark-800/30 backdrop-blur-xl border border-white/5 transform-gpu relative group perspective"
+                  whileHover={{ 
+                    scale: 1.02,
+                    rotateX: 5,
+                    rotateY: 5,
+                    boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
+                  }}
+                  transition={{ duration: 0.2, type: "tween" }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-semibold text-white mb-2">Option Chain Viewer with ML-Powered Spike Detection</h3>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">Next.js</span>
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">Python</span>
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">FastAPI</span>
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">Machine Learning</span>
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">WebSocket</span>
+                    </div>
+                    <p className="text-dark-200 mb-4">
+                      • Real-time options trading platform with ML-powered spike detection (85% accuracy)<br/>
+                      • Delta-based classification and statistical normalization for precise trade identification<br/>
+                      • Composite scoring system combining Greeks, volume, and momentum analysis<br/>
+                      • Adaptive rate limiting and caching system reducing API calls by 40%
+                    </p>
+                    <div className="mt-4">
+                      <a 
+                        href="https://github.com/Mustafa02yusuf28/Option-Strikes"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline inline-flex items-center space-x-2 w-full justify-center relative z-20"
+                      >
+                        <span>View Project</span>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
             </motion.div>
           </div>
