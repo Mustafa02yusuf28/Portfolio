@@ -508,7 +508,8 @@ const App = () => {
                     <p className="text-dark-200 mb-4">
                       • Full-stack web application for predicting IPO listing prices using market sentiment and historical data<br/>
                       • Integrated GNews API for real-time market sentiment analysis<br/>
-                      • Developed ML model trained on historical IPO data for accurate price predictions
+                      • Developed ML model trained on historical IPO data for accurate price predictions<br/>
+                      • Implemented sentiment analysis to predict market trends and IPO listing prices<br/>
                     </p>
                     <div className="mt-4">
                       <a 
