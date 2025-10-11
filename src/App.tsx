@@ -93,53 +93,54 @@ const particlesOptions: ISourceOptions = {
 
 const skillsData = {
   languages: [
+    { name: 'JavaScript', icon: <SiJavascript className="text-xl" /> },
+    { name: 'SQL', icon: <FaDatabase className="text-xl" /> },
+    { name: 'TypeScript', icon: <SiTypescript className="text-xl" /> },
     { name: 'C++', icon: <SiCplusplus className="text-xl" /> },
     { name: 'Python', icon: <SiPython className="text-xl" /> },
-    { name: 'C', icon: <SiC className="text-xl" /> },
-    
-    { name: 'JavaScript', icon: <SiJavascript className="text-xl" /> },
-    { name: 'TypeScript', icon: <SiTypescript className="text-xl" /> },
-    { name: 'SQL', icon: <FaDatabase className="text-xl" /> },
-    { name: 'Solidity', icon: <SiSolidity className="text-xl" /> }
-  ],
-  technologies: [
-    { name: 'HTML', icon: <SiHtml5 className="text-xl" /> },
-    { name: 'CSS', icon: <SiCss3 className="text-xl" /> },
-    { name: 'MySQL', icon: <SiMysql className="text-xl" /> },
-    { name: 'WebSocket', icon: <BiNetworkChart className="text-xl" /> },
-    { name: 'REST APIs', icon: <TbApi className="text-xl" /> },
-    { name: 'Ethereum', icon: <SiEthereum className="text-xl" /> },
-    { name: 'IPFS', icon: <SiIpfs className="text-xl" /> },
-    { name: 'Web3.js', icon: <SiEthereum className="text-xl" /> },
-    { name: 'MetaMask', icon: <SiEthereum className="text-xl" /> },
-    { name: 'WalletConnect', icon: <SiEthereum className="text-xl" /> }
-  ],
-  tools: [
-    { name: 'Git', icon: <SiGit className="text-xl" /> },
-    { name: 'Linux', icon: <SiLinux className="text-xl" /> },
-    { name: 'Windows', icon: <FaWindows className="text-xl" /> },
-    { name: 'Tableau', icon: <FaChartBar className="text-xl" /> },
-    { name: 'Visual Studio Code', icon: <TbBrandVscode className="text-xl" /> }
+    { name: 'C', icon: <SiC className="text-xl" /> }
   ],
   frameworks: [
-    { name: 'Django', icon: <SiDjango className="text-xl" /> },
+    { name: 'React', icon: <SiReact className="text-xl" /> },
     { name: 'Next.js', icon: <SiNextdotjs className="text-xl" /> },
-    { name: 'React', icon: <SiReact className="text-xl" /> }
+    { name: 'Django', icon: <SiDjango className="text-xl" /> },
+    { name: 'Express.js', icon: <SiJavascript className="text-xl" /> },
+    { name: 'FastAPI', icon: <SiPython className="text-xl" /> }
   ],
   libraries: [
     { name: 'Pandas', icon: <SiPandas className="text-xl" /> },
+    { name: 'NumPy', icon: <SiNumpy className="text-xl" /> },
     { name: 'TensorFlow', icon: <SiTensorflow className="text-xl" /> },
     { name: 'PyTorch', icon: <SiPytorch className="text-xl" /> },
-    { name: 'NumPy', icon: <SiNumpy className="text-xl" /> },
     { name: 'BeautifulSoup', icon: <TbBrandReactNative className="text-xl rotate-45" /> },
     { name: 'Material-UI', icon: <TbBrandReactNative className="text-xl" /> },
     { name: 'Redux', icon: <SiRedux className="text-xl" /> },
     { name: 'Recharts', icon: <FaChartBar className="text-xl" /> }
   ],
-  blockchain: [
-    { name: 'Smart Contracts', icon: <SiSolidity className="text-xl" /> },
-    { name: 'Ethereum Testnets', icon: <SiEthereum className="text-xl" /> },
-    { name: 'Chainlink', icon: <SiChainlink className="text-xl" /> }
+  databases: [
+    { name: 'MySQL', icon: <SiMysql className="text-xl" /> },
+    { name: 'MongoDB', icon: <FaDatabase className="text-xl" /> },
+    { name: 'Redis', icon: <FaDatabase className="text-xl" /> }
+  ],
+  cloudDevOps: [
+    { name: 'Git', icon: <SiGit className="text-xl" /> },
+    { name: 'GitHub', icon: <SiGithub className="text-xl" /> },
+    { name: 'GitHub Actions', icon: <SiGithub className="text-xl" /> },
+    { name: 'Docker', icon: <TbBrandVscode className="text-xl" /> },
+    { name: 'Kubernetes', icon: <TbBrandVscode className="text-xl" /> },
+    { name: 'AWS EC2', icon: <TbBrandVscode className="text-xl" /> },
+    { name: 'AWS S3', icon: <TbBrandVscode className="text-xl" /> },
+    { name: 'AWS Lambda', icon: <TbBrandVscode className="text-xl" /> },
+    { name: 'Linux', icon: <SiLinux className="text-xl" /> },
+    { name: 'Nginx', icon: <TbBrandVscode className="text-xl" /> },
+    { name: 'PM2', icon: <TbBrandVscode className="text-xl" /> }
+  ],
+  tools: [
+    { name: 'REST APIs', icon: <TbApi className="text-xl" /> },
+    { name: 'WebSocket', icon: <BiNetworkChart className="text-xl" /> },
+    { name: 'Postman', icon: <TbApi className="text-xl" /> },
+    { name: 'VS Code', icon: <TbBrandVscode className="text-xl" /> },
+    { name: 'Tableau', icon: <FaChartBar className="text-xl" /> }
   ]
 };
 
@@ -346,7 +347,7 @@ const App = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
                   <div className="flex items-center mb-4">
                     <CpuChipIcon className="h-8 w-8 text-primary-400 mr-2" />
-                    <h3 className="text-xl font-semibold text-white">Languages</h3>
+                    <h3 className="text-xl font-semibold text-white">Programming Languages</h3>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {skillsData.languages.map((skill) => (
@@ -368,54 +369,8 @@ const App = () => {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
                   <div className="flex items-center mb-4">
-                    <ServerIcon className="h-8 w-8 text-primary-400 mr-2" />
-                    <h3 className="text-xl font-semibold text-white">Technologies</h3>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {skillsData.technologies.map((skill) => (
-                      <div key={skill.name} className="skill-tag">
-                        {skill.icon}
-                        <span>{skill.name}</span>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-
-                <motion.div 
-                  className="card bg-dark-800/30 backdrop-blur-xl border border-white/5 transform-gpu relative group"
-                  whileHover={{ 
-                    scale: 1.02,
-                    boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
-                  }}
-                  transition={{ duration: 0.2, type: "tween" }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-                  <div className="flex items-center mb-4">
-                    <CommandLineIcon className="h-8 w-8 text-primary-400 mr-2" />
-                    <h3 className="text-xl font-semibold text-white">Tools</h3>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {skillsData.tools.map((skill) => (
-                      <div key={skill.name} className="skill-tag">
-                        {skill.icon}
-                        <span>{skill.name}</span>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-
-                <motion.div 
-                  className="card bg-dark-800/30 backdrop-blur-xl border border-white/5 transform-gpu relative group"
-                  whileHover={{ 
-                    scale: 1.02,
-                    boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
-                  }}
-                  transition={{ duration: 0.2, type: "tween" }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-                  <div className="flex items-center mb-4">
                     <CodeBracketIcon className="h-8 w-8 text-primary-400 mr-2" />
-                    <h3 className="text-xl font-semibold text-white">Frameworks</h3>
+                    <h3 className="text-xl font-semibold text-white">Frameworks/Libraries</h3>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {skillsData.frameworks.map((skill) => (
@@ -424,23 +379,6 @@ const App = () => {
                         <span>{skill.name}</span>
                       </div>
                     ))}
-                  </div>
-                </motion.div>
-
-                <motion.div 
-                  className="card bg-dark-800/30 backdrop-blur-xl border border-white/5 transform-gpu relative group"
-                  whileHover={{ 
-                    scale: 1.02,
-                    boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
-                  }}
-                  transition={{ duration: 0.2, type: "tween" }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-                  <div className="flex items-center mb-4">
-                    <BeakerIcon className="h-8 w-8 text-primary-400 mr-2" />
-                    <h3 className="text-xl font-semibold text-white">Libraries</h3>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
                     {skillsData.libraries.map((skill) => (
                       <div key={skill.name} className="skill-tag">
                         {skill.icon}
@@ -460,11 +398,57 @@ const App = () => {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
                   <div className="flex items-center mb-4">
-                    <ChartBarIcon className="h-8 w-8 text-primary-400 mr-2" />
-                    <h3 className="text-xl font-semibold text-white">Blockchain</h3>
+                    <ServerIcon className="h-8 w-8 text-primary-400 mr-2" />
+                    <h3 className="text-xl font-semibold text-white">Databases</h3>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    {skillsData.blockchain.map((skill) => (
+                    {skillsData.databases.map((skill) => (
+                      <div key={skill.name} className="skill-tag">
+                        {skill.icon}
+                        <span>{skill.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+
+                <motion.div 
+                  className="card bg-dark-800/30 backdrop-blur-xl border border-white/5 transform-gpu relative group"
+                  whileHover={{ 
+                    scale: 1.02,
+                    boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
+                  }}
+                  transition={{ duration: 0.2, type: "tween" }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
+                  <div className="flex items-center mb-4">
+                    <CommandLineIcon className="h-8 w-8 text-primary-400 mr-2" />
+                    <h3 className="text-xl font-semibold text-white">Cloud/DevOps</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {skillsData.cloudDevOps.map((skill) => (
+                      <div key={skill.name} className="skill-tag">
+                        {skill.icon}
+                        <span>{skill.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+
+                <motion.div 
+                  className="card bg-dark-800/30 backdrop-blur-xl border border-white/5 transform-gpu relative group"
+                  whileHover={{ 
+                    scale: 1.02,
+                    boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
+                  }}
+                  transition={{ duration: 0.2, type: "tween" }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
+                  <div className="flex items-center mb-4">
+                    <BeakerIcon className="h-8 w-8 text-primary-400 mr-2" />
+                    <h3 className="text-xl font-semibold text-white">Tools</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {skillsData.tools.map((skill) => (
                       <div key={skill.name} className="skill-tag">
                         {skill.icon}
                         <span>{skill.name}</span>
