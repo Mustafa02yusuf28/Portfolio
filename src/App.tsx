@@ -12,18 +12,17 @@ import {
   CpuChipIcon,
   ServerIcon,
   CommandLineIcon,
-  BeakerIcon,
-  ChartBarIcon
+  BeakerIcon
 } from '@heroicons/react/24/outline';
 import { 
   SiCplusplus, SiPython, SiC, SiJavascript, SiTypescript,
-  SiSolidity, SiHtml5, SiCss3, SiMysql, SiDjango, SiNextdotjs, 
+  SiMysql, SiDjango, SiNextdotjs, 
   SiReact, SiPandas, SiTensorflow, SiPytorch, SiNumpy,
-  SiGit, SiLinux, SiEthereum, SiIpfs, SiRedux, SiChainlink,
+  SiGit, SiLinux, SiRedux,
   SiGithub
 } from 'react-icons/si';
 import { TbBrandReactNative, TbBrandVscode, TbApi } from 'react-icons/tb';
-import { FaDatabase, FaWindows, FaChartBar } from 'react-icons/fa';
+import { FaDatabase, FaChartBar } from 'react-icons/fa';
 import { BiNetworkChart } from 'react-icons/bi';
 
 const particlesOptions: ISourceOptions = {
