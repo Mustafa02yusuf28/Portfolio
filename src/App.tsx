@@ -586,6 +586,46 @@ const App = () => {
                     </div>
                   </div>
                 </motion.div>
+
+                <motion.div 
+                  className="card bg-dark-800/30 backdrop-blur-xl border border-white/5 transform-gpu relative group perspective"
+                  whileHover={{ 
+                    scale: 1.02,
+                    rotateX: 5,
+                    rotateY: 5,
+                    boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)"
+                  }}
+                  transition={{ duration: 0.2, type: "tween" }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary-400/10 to-primary-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-semibold text-white mb-2">Small Jewelry Billing (Open Source)</h3>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">Next.js</span>
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">TypeScript</span>
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">SQLite</span>
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">AI/Gemini</span>
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">Tailwind</span>
+                      <span className="px-2 py-1 text-xs rounded-full bg-dark-700/30 text-primary-400">Excel</span>
+                    </div>
+                    <p className="text-dark-200 mb-4">
+                      Local-first billing and customer management app for jewelry shops with AI copilot. Features natural language invoicing, customer management, rate tracking, and privacy-first AI insights using Google Gemini.
+                    </p>
+                    <div className="mt-4">
+                      <a 
+                        href="https://github.com/Mustafa02yusuf28/Local-Jeweler-"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline inline-flex items-center space-x-2 w-full justify-center relative z-20"
+                      >
+                        <span>View Project</span>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
             </motion.div>
           </div>
