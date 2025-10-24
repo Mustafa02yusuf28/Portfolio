@@ -302,7 +302,7 @@ const App = () => {
                   transition={{ duration: 0.2, type: "tween" }}
                 >
                   <p className="text-dark-200">
-                    Driven by a fascination with algorithmic trading and market dynamics, I specialize in developing high-performance trading systems and quantitative analysis tools. My experience spans from implementing low-latency trading algorithms to creating sophisticated market analysis dashboards, always striving for optimal execution and innovative solutions in the fast-paced world of financial technology.
+                  Full-stack developer with strong web engineering experience and applied AI/ML skills. Experienced in building scalable web platforms, real-time trading systems, and AI-assisted automation tools. Quick to learn new technologies and adapt solutions for real-world problems, delivering measurable impact across product, data, and cloud systems.
                   </p>
                 </motion.div>
               </div>
