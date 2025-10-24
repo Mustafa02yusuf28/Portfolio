@@ -722,14 +722,14 @@ const App = () => {
                     <h3 className="text-xl font-semibold text-white">Contact Information</h3>
                     <div className="space-y-4">
                       <a 
-                        href="mailto:workforthieves@gmail.com" 
+                        href="mailto:mdmustafayusuf@outlook.com" 
                         className="flex items-center space-x-3 text-dark-200 hover:text-primary-400 transition-colors duration-200 relative z-20"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
                       >
                         <EnvelopeIcon className="h-5 w-5" />
-                        <span>workforthieves@gmail.com</span>
+                        <span>mdmustafayusuf@outlook.com</span>
                       </a>
                       <a 
                         href="https://t.me/thieves_28" 
